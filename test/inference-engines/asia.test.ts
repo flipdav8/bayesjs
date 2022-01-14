@@ -7,7 +7,7 @@ import { InferenceEngine } from '../../src/index'
 const infersAsiaGivenVisitToAsia = (engine: IInferenceEngine) => {
   engine.setEvidence({ VisitToAsia: ['Visit'] })
   const { infer } = engine
-  expect(infer({ VisitToAsia: ['Visit'] }).toFixed(4)).toBe('1.000')
+  expect(infer({ VisitToAsia: ['Visit'] }).toFixed(4)).toBe('1.0000')
 }
 
 const tests: { [key: string]: (engine: IInferenceEngine) => void } = {
