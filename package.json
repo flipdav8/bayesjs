@@ -2,9 +2,10 @@
   "name": "bayesjs",
   "version": "0.6.5",
   "description": "Inference on Bayesian Networks",
-  "main": "src/index.ts",
+  "main": "dist/bayes.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">= 10.18",
@@ -39,6 +40,8 @@
   },
   "homepage": "https://github.com/bayesjs/bayesjs#readme",
   "dependencies": {
+    "@types/round-to": "^4.0.0",
+    "@types/timsort": "^0.3.0",
     "round-to": "^4.1.0",
     "timsort": "^0.3.0",
     "ts-loader": "^6.2.2"
@@ -64,8 +67,6 @@
     "@types/jest": "^24.0.13",
     "@types/node": "^12.12.14",
     "@types/ramda": "0.27.3",
-    "@types/round-to": "^4.0.0",
-    "@types/timsort": "^0.3.0",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
     "commitizen": "^4.0.3",
